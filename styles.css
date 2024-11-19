@@ -1,0 +1,75 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+/* Navbar styles */
+.navbar {
+    padding: 20px;
+}
+
+.brand-name .navbar-brand {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 30px;
+}
+
+
+/* Hero section styles */
+.hero {
+    height: 100vh;
+    background: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url('https://www.archway-joinery.co.uk/wp-content/uploads/2023/04/Wooden-Door-Installations--scaled.jpeg') 
+    no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 100px;
+}
+
+
+/* Cookie consent banner styles */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cookie-banner p {
+    margin: 0;
+}
+
+.cookie-banner button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
