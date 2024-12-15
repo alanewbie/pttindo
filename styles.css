@@ -6,10 +6,13 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    color: #fff;
-    background-color: #000;
+    color: #fff; 
+    background-color: #333; 
 }
+
 
 /* Navbar styles */
 .navbar {
@@ -19,8 +22,48 @@ body {
 .brand-name .navbar-brand {
     font-weight: bold;
     font-size: 2rem;
-    margin-left: 30px;
+    margin-left: 100px;
 }
+
+#navbarNav {
+    margin-right: 100px;
+}
+
+/* Dropdown Menu Styling */
+.navbar-nav .dropdown {
+    position: relative;
+}
+
+.navbar-nav .dropdown .dropdown-menu {
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 100%; /* Position the dropdown below the parent */
+    left: 0;
+    background-color: #333; /* Dark background */
+    padding: 10px 0;
+    list-style: none;
+    border-radius: 5px;
+    min-width: 200px;
+    z-index: 1000;
+}
+
+.navbar-nav .dropdown .dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.navbar-nav .dropdown .dropdown-menu a:hover {
+    background-color: #007bff; /* Blue hover effect */
+}
+
+/* Show dropdown on hover */
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block; /* Show menu on hover */
+}
+
 
 
 /* Hero section styles */
@@ -28,7 +71,7 @@ body {
     height: 100vh;
     background: 
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-    url('https://www.archway-joinery.co.uk/wp-content/uploads/2023/04/Wooden-Door-Installations--scaled.jpeg') 
+    url('image/HomePage.jpg') 
     no-repeat center center/cover;
     display: flex;
     justify-content: center;
@@ -53,11 +96,11 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
-    padding: 10px;
+    padding: 20px;
+    padding-left: 100px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -73,3 +116,25 @@ body {
     border-radius: 5px;
 }
 
+
+/* Products sectoin */
+.card-img-top {
+    height: 600px;
+    object-fit: cover; 
+    border-radius: 5px;
+}
+
+body #products {
+    padding-top: 100px !important; /* priority beyond bootstrap */
+    background-color: #333; 
+    color: #fff;
+}
+
+
+/* Catalog sectoin */
+#catalog {
+    padding-top: 100px !important; /* beyond bootstrap */
+    background-color: #333; 
+    color: #fff; 
+    padding: 50px; 
+}
