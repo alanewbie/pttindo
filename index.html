@@ -7,9 +7,9 @@
     <title>PT.TINDO - Door Expert</title>
     <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Bootstrap CSS (optional, if you want to use Bootstrap) -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="icon" href="image/logo.png" type="image/x-icon">
 </head>
 <body>
 
@@ -24,9 +24,18 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#products" id="productsDropdown" role="button">Produk</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#pvc-plus">PintuHade Fiberglass</a></li>
+                            <li><a class="dropdown-item" href="#fiber-glass">PintuHade PVCPlus</a></li>
+                            <li><a class="dropdown-item" href="#daun-pintu">Kusen PintuHade</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pdf/PintuHade Katalog.pdf" download>Katalog</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Permintaan</a></li>
                 </ul>
             </div>
         </div>
@@ -35,20 +44,70 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>Experts in Doors and Building Materials</h1>
-            <p>Enhancing the beauty and safety of your buildings</p>
-            <a href="#about" type="button" class="btn btn-dark btn-lg">Learn More</a>
+            <h1>Ahli dalam Pintu dan Bahan Bangunan</h1>
+            <p>Meningkatkan keindahan dan keamanan bangunan Anda</p>
+            <a href="#about" type="button" class="btn btn-dark btn-lg">Pelajari Lebih Lanjut</a>            
         </div>
     </section>
 
+    <!-- Products Section -->
+    <section id="products" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Produk Kami</h2>
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="image/doorA.png" class="card-img-top" alt="Produk 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">PintuHade Fiberglass</h5>
+                            <p class="card-text">Pintu fiberglass yang tahan lama dan bergaya untuk rumah modern.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="image/doorB.png" class="card-img-top" alt="Produk 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">PintuHade PVCPlus</h5>
+                            <p class="card-text">Pintu PVC berkualitas tinggi dengan daya tahan dan desain terbaik.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="image/doorC.png" class="card-img-top" alt="Produk 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Kusen PintuHade</h5>
+                            <p class="card-text">Kusen pintu premium yang dirancang untuk melengkapi ruang Anda.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Catalog display Section -->
+    <section id="catalog" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Katalog Kami</h2>
+            <embed src="pdf/PintuHade Katalog.pdf" width="100%" height="800px" type="application/pdf">
+        </div>
+    </section>
+    
+
     <!-- Cookie Consent Banner -->
-    <div class="cookie-banner">
+    <div class="cookie-banner" id="cookie-banner">
         <p>We use cookies to enhance your browsing experience. By continuing to browse, you agree to our privacy policy. <a href="#" class="text-white">Read More</a></p>
         <button id="accept-btn" class="btn btn-primary">Accept</button>
         <button id="reject-btn" class="btn btn-danger">Reject</button>
     </div>
 
-    <!-- Bootstrap JS (optional, if using Bootstrap features) -->
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
