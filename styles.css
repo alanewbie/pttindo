@@ -80,6 +80,12 @@ body {
     color: #fff;
 }
 
+.fiberglass-page .hero {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+        url('image/FiberglassHomePage.png') no-repeat center center/cover;
+}
+
 .hero-content h1 {
     font-size: 50px;
     font-weight: bold;
@@ -123,6 +129,12 @@ body {
     object-fit: cover; 
     border-radius: 5px;
 }
+
+.fiberglass-page .card-img-top {
+    height: 800px;
+    object-fit: cover;
+}
+
 
 body #products {
     padding-top: 100px !important; /* priority beyond bootstrap */
